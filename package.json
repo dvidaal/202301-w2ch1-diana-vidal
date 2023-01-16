@@ -6,15 +6,16 @@
     "prebuild:dev": "rimraf dist/",
     "prebuild": "rimraf dist/",
     "build:dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "husky": "^8.0.3",
     "parcel": "^2.8.2",
     "rimraf": "^4.0.7",
-    "sass": "^1.57.1"
+    "sass": "^1.57.1",
+    "husky": "^8.0.0"
   }
 }
