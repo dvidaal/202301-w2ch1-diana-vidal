@@ -1,0 +1,81 @@
+@use "reset/reset";
+@use "typography/typography";
+
+@import url("/node_modules/@fontsource/montserrat/400.css");
+@import url("/node_modules/@fontsource/fraunces/800.css");
+@import url("/node_modules/@fortawesome/fontawesome-free/css/all.min.css");
+
+.add-to-cart {
+  color: #fff;
+  font-weight: bold;
+  font-family: typography.$font-montserrat;
+  background-color: #3d8168;
+  border-radius: 20px;
+  width: 295px;
+  height: 49px;
+}
+
+p {
+  font-family: typography.$font-montserrat;
+  color: #8f9299;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-family: typography.$font-secondary;
+  font-size: 35px;
+  padding: 10px;
+}
+
+.details-perfume {
+  &__definition {
+    font-family: typography.$font-montserrat;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding: 10px;
+  }
+}
+
+.container-perfume__price {
+  .container-perfume__price--discount {
+    color: #427964;
+    font-size: 40px;
+    font-family: typography.$font-secondary;
+    padding: 10px;
+  }
+
+  .container-perfume__price--initial {
+    color: #8f9299;
+    font-family: typography.$font-montserrat;
+    text-decoration: line-through;
+    padding: 10px;
+  }
+}
+
+.chanel {
+  border-radius: 20px 20px 0 0;
+  height: 370px;
+  width: 343px;
+  object-fit: cover;
+}
+
+.container-perfume {
+  background-color: #fff;
+  border-radius: 20px 20px;
+
+  height: 751px;
+  width: 342px;
+  margin: 0 auto;
+}
+
+article {
+  background-color: #f3eae3;
+}
+
+.button-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
